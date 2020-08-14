@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="estaciones, té, infusiones, blend, orgánico">
-    <meta name="description" content="Somos Estaciones. Elaboramos blends de té. Utilizamos hebras orgánicas y agroecologicas de origen nacional">
+    <meta name="keywords" content="estaciones, té, infusiones, blend, orgánico, free, sample">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
     <link rel="stylesheet" href="scss/style.css">
-    <title>Estaciones té blends</title>
+    <title>Muestras gratis</title>
 </head>
 
 <body>
-
-    <!-------- BOOTSTRAP NAV -------->
+    <!-- BOOTSTRAP NAV -->
 
     <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" width="85" height="auto" alt="">
@@ -29,9 +28,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
-                </li>
+                </li> 
 
-                <li class="nav-item">
+                 <li class="nav-item">
                     <a class="nav-link" href="conocenos.html">Conocenos</a>
                 </li>
 
@@ -39,7 +38,7 @@
                     <a class="nav-link" href="productos.html">Productos</a>
                 </li>
 
-                <li class="nav-item">
+               <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contactanos</a>
                 </li>
 
@@ -51,63 +50,40 @@
         </div>
     </nav>
 
+    <!-- MAIN -->
 
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Lo sentimos!</strong> algunas páginas del sitio se encuentran en construcción.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
 
-    <!-------- MAIN -------->
 
-    <div class="container hero">
-        <div class="row">
-            <div class="col-12 col-sm-5 col-md-5 col-lg-12 col-xl-12">
-                <h1 lang="en" class="hero__titulo">Disfrutá cada estación</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
-                <a class="hero__botonesSimples_links" href="contact.html">
-                    <div class="hero__botonesSimples">
-                        Contactanos
-                    </div>
-                </a>
-                <a class="hero__botonesSimples_links" href="free-sample.html">
-                    <div class="hero__botonesSimples">
-                        Free Sample
-                    </div>
-                </a>
-            </div>
+    <div class="container hero__freeSample">
+        <div class="col-12 col-sm-5 col-md-5 col-lg-12 col-xl-12">
+            <h1 lang="en" class="hero__titulo">sí, gratis!</h1>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <img class="identityleafs__imagen" src="images/identityleafs.png" alt="imagen identidad" />
+                <img class="freeSample__imagen" src="images/identityleafs2.png" alt="imagen identidad" />
             </div>
         </div>
     </div>
-
 
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="articulos__izquierda">
                     <div class="articulos__texto">
-                        <p>Queremos invitarte a que disfrutes la belleza del jardín. Cada día descubrimos una planta
-                            que despierta nuestros deseos de poder inmortalizarla en un sabor, un aroma, en una nueva
-                            experiencia.
+                        <p>Si sos un profesional en la industria gastronómica o
+                            simplemente queres probar la calidad de nuestro producto
+                            ¡viniste al lugar indicado! pedí tu muestra gratis y nos
+                            pondremos en contacto para encontrar el sabor perfecto.
                         </p>
-                        <p>Deseamos alcanzarte un pequeño trozo del paisaje para que puedas disfrutarlo en cada momento.
+                        <p>Tené en cuenta que si bien las muestras son gratuitas,
+                            enviarlas no lo es. Podrás ver las opciones de envío y
+                            las tarifas al finalizar tu consulta.
                         </p>
                         <div>
-                            <a href="#quote"><span class="articulos__flecha">↓</span></a>
+                            <a href="#form"><span class="articulos__flecha">↓</span></a>
                         </div>
                     </div>
                 </div>
@@ -117,19 +93,48 @@
 
 
 
-    <!-------- QUOTE -------->
 
-    <div id="quote">
-        <div class="container quote">
-            <blockquote class="blockquote text-center">
-                <p class="mb-0"> Hay momentos que deberían ser eternos. Los aromas y los sabores
-                    nos transportan a aquellos lugares que tanto anhelamos. Sabemos
-                    que cada época tiene su propio encanto y es por eso que en estaciones
-                    queremos compartir esos momentos con vos.
-                </p>
-            </blockquote>
-        </div>
+    <!---------------FORM-FREESAMPLE--------------->
 
+    <div id="form" class="container form__freeSample d-flex justify-content-center">
+        <form class="col-7">
+            <form>
+                <div class="form-row">
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="articulos__subtitulo">
+                            <h2>Pedí el tuyo</h2>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Ciudad</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Tres Arroyos</option>
+                        <option>Gonzales Chaves</option>
+                        <option>Bahia Blanca</option>
+                        <option>Necochea</option>
+                    </select>
+                </div>
+
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Contactanos</button>
+                </div>
+            </form>
     </div>
 
     <!---------------FOOTER--------------->
@@ -140,7 +145,7 @@
         <p><a href="mailto:estaciones.teablends@gmail.com">estaciones.teablends</a></p>
     </footer>
 
-    <!---------- SCRIPTS NO TOCAR ---------->
+    <!-- SCRIPTS NO TOCAR -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -151,8 +156,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
         integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous">
     </script>
-
-
 
 </body>
 
