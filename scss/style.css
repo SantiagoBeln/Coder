@@ -23,7 +23,8 @@ body {
 
 /* --------HERO--------*/
 .hero {
-  margin-top: 200px;
+  position: relative;
+  margin-top: 3em;
 }
 
 .hero__titulo {
@@ -43,7 +44,7 @@ body {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #505F6F;
-  background-color: #f5f3f4;
+  background-color: #f5f5f5;
 }
 
 .hero__botonesSimples:hover {
@@ -67,8 +68,8 @@ body {
   position: absolute;
   z-index: -1;
   right: 0;
-  top: -340px;
-  width: 100vh;
+  top: -300px;
+  width: 110vh;
 }
 
 /*--------ARTICULOS--------*/
@@ -92,8 +93,8 @@ body {
 }
 
 .articulos__foto {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
   -ms-grid-column: 2;
   grid-area: foto;
 }
@@ -119,24 +120,28 @@ body {
   display: grid;
   -ms-grid-columns: 490px 310px;
       grid-template-columns: 490px 310px;
-      grid-template-areas: "titulo-seccion foto" "titulo-nota    foto" "texto          foto" "texto          hashtag" "texto          ." "texto          .";
+      grid-template-areas: "titulo-seccion ." "titulo-nota    ." "texto          foto" "texto          foto" "texto          foto" "texto          foto";
   grid-gap: 30px 90px;
 }
 
-/* -------- QUOTE --------*/
-#quote {
-  height: 400px;
-  padding: 9em;
+ul.space_list li {
+  margin-top: 1em;
+  margin-bottom: 4.7em;
 }
 
-.quote {
-  -webkit-transition: all 2s;
-  transition: all 2s;
+#metodo {
+  margin-top: 5em;
 }
 
-.quote:hover {
-  -webkit-transform: scale(1.08, 1.08);
-          transform: scale(1.08, 1.08);
+.btn {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.titulo__variante h3 {
+  color: #505F6F;
+  font-family: 'Bagnard Sans';
+  padding-bottom: 1.5em;
 }
 
 /* -------- FREE SAMPLE --------*/
@@ -145,7 +150,7 @@ body {
   z-index: -1;
   right: 0;
   top: -120px;
-  width: 100vh;
+  width: 120vh;
 }
 
 /* -------- CARDS --------*/
@@ -167,19 +172,18 @@ body {
 }
 
 .maps {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  padding-bottom: 30px;
+  padding: 1em;
 }
 
 iframe {
   width: 100%;
+}
+
+.contacto {
+  margin-top: 3em;
+  padding: 3em;
 }
 
 /* --------FREE SAMPLE--------*/
@@ -216,11 +220,12 @@ footer a:hover {
   text-decoration: none;
 }
 
-/* --------MEDIA--------*/
-@media screen and (max-width: 991px) {
+/* ----------------MEDIAs----------------*/
+/* --------IPHONE--------*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .hero__titulo {
     font-size: 5em;
-    line-height: 1em;
+    line-height: 1.1em;
   }
   .identityleafs__imagen {
     display: none;
@@ -231,19 +236,64 @@ footer a:hover {
   .articulos__izquierda {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 350px;
-        grid-template-columns: 350px;
+    -ms-grid-columns: 260px;
+        grid-template-columns: 260px;
   }
   .articulos__texto {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .articulos__flecha {
     margin-left: 1.4em;
   }
-  #quote {
-    height: 400px;
-    padding: 0.5em;
-    margin-top: 150px;
+  ul.space_list li {
+    margin-top: 1rem;
+    margin-bottom: 1em;
+  }
+  .imagen__contacto {
+    display: none;
+  }
+  .footer__imagen {
+    display: none;
+  }
+}
+
+/* --------IPAD--------*/
+@media only screen and (min-device-width: 736px) and (max-device-width: 1024px) {
+  .hero {
+    margin-top: 6em;
+  }
+  .hero__titulo {
+    font-size: 5em;
+    line-height: 1.1em;
+  }
+  .identityleafs__imagen {
+    display: none;
+  }
+  .freeSample__imagen {
+    display: none;
+  }
+  .articulos__izquierda {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30em;
+        grid-template-columns: 30em;
+  }
+  .articulos__texto {
+    font-size: 1.1em;
+  }
+  .articulos__flecha {
+    margin-left: 2.6em;
+    padding-bottom: 3em;
+  }
+  #metodo {
+    margin-top: 16em;
+  }
+  ul.space_list li {
+    margin-top: 1em;
+    margin-bottom: 4.4rem;
+  }
+  .footer__imagen {
+    width: 60vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

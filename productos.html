@@ -9,12 +9,31 @@
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
     <link rel="stylesheet" href="scss/style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Nuestros productos</title>
 </head>
 
 <body>
 
-    <!-- BOOTSTRAP NAV -->
+    <!---------------BOOTSTRAP NAV--------------->
 
     <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" width="85" height="auto" alt="">
@@ -51,7 +70,8 @@
         </div>
     </nav>
 
-    <!-- MAIN -->
+    <!---------------MAIN--------------->
+    
 
     <div class="container hero">
         <div class="row">
@@ -61,40 +81,76 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <img class="identityleafs__imagen" src="images/identityleafs2.png" alt="imagen identidad" />
-            </div>
-        </div>
-    </div>
-
     <div class="container productos__tarjetas d-flex justify-content-center">
         <div class="card-deck">
             <div class="card">
-                <img class="card-img-top" src="images/ProductPouch.png" alt="Card image cap">
+                <img class="card-img-top" src="images/Orangeblend.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Jardin Premiere</h5>
-                    <p class="card-text">
-                        Uno de los tés más suaves en el paladar, con notas dulces de sabor.</p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal__citric">
+                        Citric Blend
+                      </button>
                 </div>
             </div>
 
             <div class="card">
-                <img class="card-img-top" src="images/ProductPouch.png" alt="Card image cap">
+                <img class="card-img-top" src="images/Jardinpremier.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Lavender Blend</h5>
-                    <p class="card-text">De sabor dulce y cuerpo robusto, es una de las variedades más perfumadas.
-                    </p>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal__jardin">
+                        Jardin Premier
+                      </button>
                 </div>
             </div>
 
         </div>
     </div>
 
+
+    <!---------------MODAL--------------->
+
+<div class="modal fade" id="Modal__citric" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Citric Blend</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p><strong> Una de las variedades más suaves en el paladar, con notas dulces y una sabor cítrico intenso.</strong></p>
+            <p> 5' en agua a no más de 80° para una taza perfecta</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Modal__jardin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Jardin Premier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p><strong> Una de las variedades más especiadas, con notas amargas y un sabor fresco.</strong></p>
+            <p> 3' en agua a no más de 80° para una taza perfecta</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!---------------FOOTER--------------->
-    <hr>
+
     <footer>
+        <img class="footer__imagen" src="images/GreenTea.png" alt="">
         <p>Santa Ángela • Adolfo Gonzales Chaves • Distrito VIII</p>
         <p>Buenos Aires • Argentina</p>
         <p><a href="mailto:estaciones.teablends@gmail.com">estaciones.teablends</a></p>

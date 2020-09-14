@@ -9,6 +9,25 @@
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
     <link rel="stylesheet" href="scss/style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Muestras gratis</title>
 </head>
 
@@ -28,9 +47,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
-                </li> 
+                </li>
 
-                 <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="conocenos.html">Conocenos</a>
                 </li>
 
@@ -38,7 +57,7 @@
                     <a class="nav-link" href="productos.html">Productos</a>
                 </li>
 
-               <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contactanos</a>
                 </li>
 
@@ -73,10 +92,9 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div class="articulos__izquierda">
                     <div class="articulos__texto">
-                        <p>Si sos un profesional en la industria gastronómica o
-                            simplemente queres probar la calidad de nuestro producto
-                            ¡viniste al lugar indicado! pedí tu muestra gratis y nos
-                            pondremos en contacto para encontrar el sabor perfecto.
+                        <p> <strong>¿Queres probar la calidad de nuestro producto?</strong>
+                            pedí tu muestra gratis y te contactamos para encontrar 
+                            tu sabor perfecto.
                         </p>
                         <p>Tené en cuenta que si bien las muestras son gratuitas,
                             enviarlas no lo es. Podrás ver las opciones de envío y
@@ -99,42 +117,46 @@
     <div id="form" class="container form__freeSample d-flex justify-content-center">
         <form class="col-7">
             <form>
-                <div class="form-row">
 
+                <div class="form-row">
                     <div class="row d-flex justify-content-center">
                         <div class="articulos__subtitulo">
-                            <h2>Pedí el tuyo</h2>
+                            <h2>Pedí tu muestra</h2>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido">
+                        <label for="exampleFormControlInput1">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleFormControlInput1">Apellido</label>
+                        <input type="text" class="form-control" id="Apellido">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                        placeholder="nombre@ejemplo.com">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Ciudad</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Tres Arroyos</option>
-                        <option>Gonzales Chaves</option>
-                        <option>Bahia Blanca</option>
-                        <option>Necochea</option>
-                    </select>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Dirección</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
                 </div>
 
                 <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-2">Contactanos</button>
+                    <button type="submit" class="btn btn-primary mb-2">Quiero mi Free Sample!</button>
                 </div>
             </form>
+        </form>
     </div>
 
     <!---------------FOOTER--------------->

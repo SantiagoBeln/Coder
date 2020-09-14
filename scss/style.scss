@@ -8,7 +8,8 @@ body {
 /* --------HERO--------*/
 
 .hero {
-    margin-top: 200px;
+    position: relative;
+    margin-top: 3em;
 }
 
 .hero__titulo {
@@ -27,7 +28,7 @@ body {
     margin: 0 20px 20px 0;
     transition: 0.2s;
     color: $secondary;
-    background-color: #f5f3f4;
+    background-color: $white;
 
     &:hover {
         color: #f5f3f4;
@@ -50,9 +51,10 @@ body {
     position: absolute;
     z-index: -1;
     right: 0;
-    top: -340px;
-    width: 100vh;
+    top: -300px;
+    width: 110vh;
 }
+
 
 /*--------ARTICULOS--------*/
 
@@ -91,30 +93,35 @@ body {
     display: grid;
     grid-template-columns: 490px 310px;
     grid-template-areas: 
-    "titulo-seccion foto"
-    "titulo-nota    foto"
+    "titulo-seccion ."
+    "titulo-nota    ."
     "texto          foto"
-    "texto          hashtag"
-    "texto          ."
-    "texto          .";
+    "texto          foto"
+    "texto          foto"
+    "texto          foto";
     grid-gap: 30px 90px;
 }
 
-/* -------- QUOTE --------*/
+ul.space_list li { 
+    margin-top: 1em;
+    margin-bottom: 4.7em;
+ }
 
-#quote {
-    height: 400px;
-    padding: 9em;
+#metodo{
+    margin-top: 5em;
 }
 
-.quote {
-    transition: all 2s;
-
-    &:hover {
-        transform: scale(1.08, 1.08);
-    }
-    
+.btn {
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
+
+.titulo__variante h3{
+    color: $secondary;
+    font-family: 'Bagnard Sans';
+    padding-bottom: 1.5em;
+}
+
 
 /* -------- FREE SAMPLE --------*/
 
@@ -123,7 +130,7 @@ body {
     z-index: -1;
     right: 0;
     top: -120px;
-    width: 100vh;
+    width: 120vh;
 }
 
 /* -------- CARDS --------*/
@@ -144,13 +151,16 @@ transition: all 0.5s;
 }
 
 .maps {
-	justify-content: center;
-	align-items: center;
 	filter: grayscale(1);
-	padding-bottom: 30px;
+	padding: 1em;
 }
 iframe {
 	width: 100%;
+}
+
+.contacto {
+    margin-top: 3em;
+    padding: 3em;
 }
 
 /* --------FREE SAMPLE--------*/
@@ -190,39 +200,101 @@ footer {
     }
 }
 
-/* --------MEDIA--------*/
+/* ----------------MEDIAs----------------*/
 
-@media screen and (max-width: 991px) {
+
+/* --------IPHONE--------*/
+
+@media only screen 
+and (min-device-width : 375px) and (max-device-width : 667px) {
 
     .hero__titulo {
         font-size: 5em;
-        line-height: 1em;
+        line-height: 1.1em;
     }
 
     .identityleafs__imagen {
         display: none;
     }
 
-    .freeSample__imagen{
+    .freeSample__imagen {
        display: none;
     }
 
     .articulos__izquierda {
         display: grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 260px;
     }
 
     .articulos__texto {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .articulos__flecha {
         margin-left: 1.4em;
     }
 
-    #quote {
-        height: 400px;
-        padding: 0.5em;
-        margin-top: 150px;
+    ul.space_list li { 
+        margin-top: 1rem;
+        margin-bottom: 1em;
+     }
+
+     .imagen__contacto{
+         display: none;
+     }
+
+     .footer__imagen {
+        display: none;
     }
+}
+
+/* --------IPAD--------*/
+
+@media only screen 
+and (min-device-width : 736px) 
+and (max-device-width : 1024px) {
+
+    .hero{
+        margin-top: 6em;
+    }
+
+    .hero__titulo {
+        font-size: 5em;
+        line-height: 1.1em;
+    }
+
+    .identityleafs__imagen {
+        display: none;
+    }
+
+    .freeSample__imagen {
+       display: none;
+    }
+
+    .articulos__izquierda {
+        display: grid;
+        grid-template-columns: 30em;
+    }
+
+    .articulos__texto {
+        font-size: 1.1em;
+    }
+
+    .articulos__flecha {
+        margin-left: 2.6em;
+        padding-bottom: 3em;
+    }
+
+    #metodo{
+        margin-top: 16em;
+    }
+
+    ul.space_list li { 
+        margin-top: 1em;
+        margin-bottom: 4.4rem;
+     }
+
+     .footer__imagen {
+         width: 60vh;;
+     }
 }
